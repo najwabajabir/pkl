@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lazada</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        div.register {
+            width: 880px;
+            height: 480px;
+            position: relative;
+            margin: 6% auto;
+            background-color: white;
+            border-radius: 20px;
+            padding-top: 5px;
+            padding-left: 1cm;
+        }
+        
+        form {
+            margin: auto;
+            position: relative;
+            align-items: center;
+        }
+        
+        header {
+            background-position: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .ip {
+            font-family: FontAwesome, "Roboto", sans-serif;
+            outline: 0;
+            width: 440px;
+            border: 0;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 14px;
+            margin-bottom: -1px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        
+        .in {
+            width: 500px;
+            height: 55px;
+            background-color: white;
+            border: 1px solid black;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+        }
+        
+        .iin {
+            border-right: 1px solid black;
+            padding: 15px;
+            height: 55px;
+        }
+        
+        .typ {
+            width: -webkit-calc(100% - 188px);
+            width: -moz-calc(100% - 188px);
+            width: calc(100% - 188px);
+        }
+        
+        .tlp {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 14px 20px;
+        }
+        
+        button {
+            font-family: "Titillium Web", sans-serif;
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: .1em;
+            outline: 0;
+            background: #e04700;
+            width: 380px;
+            border: 0;
+            margin: 0px 0px 15px;
+            padding: 15px;
+            color: #FFFFFF;
+            -webkit-transition: all 0.3 ease;
+            transition: all 0.3 ease;
+            cursor: pointer;
+            background-position: center;
+        }
+        
+        label {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+        .loc {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 14px 20px;
+        }
+        
+        .lbl {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: start;
+            -webkit-align-items: flex-start;
+            -moz-box-align: start;
+            -ms-flex-align: start;
+            align-items: flex-start;
+            padding: 14px 20px;
+        }
+        
+        .name {
+            width: 188px;
+            color: #333;
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 11px;
+        }
+        
+        .type {
+            margin-top: 10px;
+            width: -webkit-calc(100% - 188px);
+            width: -moz-calc(100% - 188px);
+            width: calc(100% - 188px);
+        }
+        
+        .tulis {
+            width: 880px;
+            height: 30px;
+        }
+        
+        .dlm {
+            width: -webkit-calc(100% - 188px);
+            width: -moz-calc(100% - 188px);
+            width: calc(100% - 188px);
+        }
+        
+        .top {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(208, 220, 221);
+        }
+        
+        img {
+            width: 35px;
+            height: auto;
+            margin-top: 14px;
+            margin-left: 23px;
+        }
+        
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+            <img src="sc.png">
+        </div>
+    </div>
+    <div class="register">
+        <header>
+            <h1>SIGN UP</h1>
+        </header>
+        <div>
+
+            <div id="signup">
+                <div class="lbl">
+                    <div class="name">
+                        <h5>Jenis akun</h5>
+                    </div>
+                    <div class="type">
+                        <input type="radio" name="type" value="perorangan" onclick=kl()> Perorangan
+                        <input type="radio" name="type" value="perusahaan" onclick=kli()> Perusahaan
+                    </div>
+                </div>
+                <div class="tulis">
+                    <div class="dlm">
+                        <h6 id="org"> Untuk melanjutkan proses mendaftar sebagai perorangan, mohon dipastikan Anda memiliki Identitas diri (KTP / Passport) yang masih berlaku dan telah berusia lebih dari 18 tahun.
+                        </h6>
+                        <h6 id="usaha">
+                            Untuk melanjutkan proses mendaftar sebagai perusahaan, mohon dipastikan Anda memiliki Surat Keterangan Usaha (SIUP) yang masih berlaku.
+                        </h6>
+                    </div>
+                </div>
+                <div class="loc" id="lokasi">
+                    <div class="name">
+                        <h5>Lokasi Toko</h5>
+                    </div>
+                    <div class="type">
+                        <select name="location" id="location">
+                    <option value="jkt">Jakarta</option>
+                    <option value="bgr">Bogor</option>
+                    <option value="bks">Bekasi</option>
+                    <option value="trg">Tanggerang</option>
+                  </select>
+                    </div>
+                </div>
+                <div class="tlp" id="notelp">
+                    <div class="name">
+                        <h5>Nomor Telepon</h5>
+                    </div>
+                    <div class="typ">
+                        <div class="in">
+                            <div class="iin"><label for="no">+62</label></div>
+                            <input class="ip" type="tel" name="no">
+                        </div>
+                    </div>
+                </div>
+                <div id="agree">
+                    <input type="checkbox" id="agr" name="agr" value="yes">
+                    <label for="agr">Saya telah membaca, memahami dan menyetujui  Perjanjian Marketplace LazadadanPerjanjian Jasa Logistik</label>
+                </div>
+                <div class="btn">
+                    <button type="submit">submit</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var org = document.getElementById("org");
+        var ush = document.getElementById("usaha");
+
+        org.style.display = "none";
+        ush.style.display = "none";
+
+        function kl() {
+            org.style.display = "block";
+            ush.style.display = "none";
+        }
+
+        function kli() {
+            ush.style.display = "block";
+            org.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
